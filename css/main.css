@@ -1,0 +1,130 @@
+/*
+** author        : Chafik Amraoui
+** Github        : Chafikamr
+** design source : frontendmenito.io
+** name          : activity dashboard
+** date          : 11/10/2021
+*/
+
+
+/* start global rules **/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0f1424;
+}
+
+.wrapper {
+    /* width: 1000px; */
+    /* background-color: aqua; */
+    height: 100px;
+    margin-top: 100px;
+}
+
+
+/***** End global rules ***/
+
+.profile {
+    background-color: #5847eb;
+    height: calc(100% + -20px);
+    border-radius: 10px 10px;
+    overflow: hidden;
+}
+
+.profile header {
+    padding: 0 20px;
+}
+
+.profile .avatar {
+    height: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.profile .avatar .img_container {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 2px;
+}
+
+.profile .avatar .img_container img {
+    width: 100%;
+}
+
+.info span {
+    color: white;
+    display: block;
+}
+
+.profile-bod span {
+    display: block;
+}
+
+.profile-bod {
+    background-color: #1c1f4a;
+    height: 100%;
+    color: white;
+    padding: 20px;
+    line-height: 2;
+}
+
+.activity {
+    /* background-color: tomato; */
+    padding-top: 50px;
+    border-radius: 10px 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.activity img {
+    position: absolute;
+    top: -10px;
+    right: 20%;
+}
+
+.details {
+    position: relative;
+    background-color: #1c1f4a;
+    color: white;
+    border-radius: 10px 10px;
+    padding: 20px;
+}
+
+.details span {
+    display: block;
+}
+
+.details span.act {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.details span.hours {
+    /* font-size: 30px; */
+    /* font-weight: bold; */
+}
+
+.details .last-total {
+    color: rgb(100 114 194);
+}
+
+@media (max-width: 767.98px) {
+    .row {
+        --bs-gutter-x: 0rem;
+    }
+    .row>* {}
+}
+
+.row .activity:nth-child(1) {
+    margin-bottom: 20px;
+}
